@@ -1,0 +1,206 @@
+body {
+  background: linear-gradient(to top, #EDC3BE, white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 69px;
+  position: relative;
+  display: block;
+  opacity: 1;
+}
+
+.emoji:hover {
+  animation: shake 0.08s ease-in-out alternate infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.text {
+  font-size: 12px;
+  margin-top: 24px;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial Narrow, sans-serif;
+}
+
+.buttons {
+  position: absolute;
+  bottom: calc(100vh / 4);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.twitter-logo {
+  background-image: url('https://raw.githubusercontent.com/dick-fuck-face/big-dick-testing/main/icons/twitter-app-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+}
+
+.twitter-logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.twitter-logo:last-child {
+  margin-right: 0;
+}
+
+.substack-logo {
+  background-image: url('https://raw.githubusercontent.com/dick-fuck-face/big-dick-testing/main/icons/substack-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+}
+
+.substack-logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.substack-logo:last-child {
+  margin-right: 0;
+}
+
+.box {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 8px 8px #000000;
+  -moz-box-shadow: 8px 8px #000000;
+  box-shadow: 8px 8px #000000;
+  border: solid #000000;
+  background-color: #EDC3BE;
+  padding: 25px;
+  font-family: Arial Narrow, sans-serif;
+  font-size: 10pt;
+  color: #000000;
+  text-align: center;
+  transition: all 0.1s ease;
+}
+
+.box:hover {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 4px #000000;
+  -moz-box-shadow: 4px 4px #000000;
+  box-shadow: 4px 4px #000000;
+  border: solid #000000;
+  background-color: #FFFFFF;
+  padding: 20px;
+  font-family: Arial Narrow, sans-serif;
+  font-size: 12pt;
+}
+
+.box2 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px #000000;
+  -moz-box-shadow: 8px 8px #000000;
+  box-shadow: 8px 8px #000000;
+  border: solid #000000;
+  background-color: #EDC3BE;
+  padding: 18px;
+  font-family: Arial Narrow, sans-serif;
+  font-size: 10pt;
+  color: #000000;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box2:hover span {
+  display: none;
+}
+
+.box2:hover {
+  -webkit-border-radius: -50px;
+  -moz-border-radius: -50px;
+  border-radius: -50px;
+  -webkit-box-shadow: -10px -10px #0000;
+  -moz-box-shadow: -10px -10px #0000;
+  box-shadow: -10px -10px #0000;
+  border: solid #0000;
+  background-color: #0000;
+  padding: 0px;
+}
+
+.box2:hover:after {
+  content: "Wait! Don't scare him!";
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 4px #000000;
+  -moz-box-shadow: 4px 4px #000000;
+  box-shadow: 4px 4px #000000;
+  border: solid #000000;
+  background-color: #FFED65;
+  padding: 18px;
+  font-family: Arial Narrow, sans-serif;
+  font-size: 12pt;
+}
+
+#box {
+  position: absolute;
+  transition: transform 0.1s ease-out;
+  z-index: 9;
+}
+
+#box2 {
+  position: absolute;
+  transition: transform 0.1s ease-out;
+  z-index: 8;
+}
+
+#emoji {
+  font-size: 69px;
+  position: absolute;
+  display: block;
+  opacity: 1;
+}
+
+#emoji:hover {
+  animation: shake 0.09s ease-in-out alternate infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.beast {
+  font-size: 300px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 11;
+}
