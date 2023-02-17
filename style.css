@@ -37,6 +37,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Arial Narrow, sans-serif;
+  color: #0000;
 }
 
 .buttons {
